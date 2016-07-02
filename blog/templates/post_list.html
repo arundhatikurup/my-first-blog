@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <style type="text/css">
+        
+    </style>
+</head>
+<body>
+<h2>Happy Blogging !!!</h2>
+{% for p in posts %}
+    <h1>{{ p.title }} </h1>
+    <p class='special' >{{ p.author }}</p>
+    <p>{{ p.created_date}}</p>
+    <p>{{ p.published_date }}</p>
+{% endfor %}
+
+</body>
+</html>
